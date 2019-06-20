@@ -1,0 +1,138 @@
+@basicFont :'Open Sans';
+@lightFont  : 'Open Sans Light';
+@boldFont: 'Open Sans Bold ';
+
+@fcolor : #2e2e2e;
+@logoColor: #555559;
+@backColor: #fbfafa;
+@padColor: #555559;
+@padBackColor: #fff;
+@instaColor: #fff;
+
+@LogoTextSize: 56pt;
+@padHeadSize: 24pt;
+@padArticleSize: 18pt;
+@NavItemSize: 20pt;
+@footerTextSize: 14pt;
+
+body{
+
+    @media (max-width: 630px){
+        width: 100vh;
+        #nav{
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 200px;
+           ul{
+            flex:1;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            
+                li{
+                    margin: 10px auto;
+                    padding-right: 50px;
+                    font-size: 14pt;
+                }
+            }
+    
+           
+        }
+    
+    }
+
+@media (max-width: 800px){
+
+   
+    #logocover{
+        height: 60vh;
+        
+        #logocont{
+        
+          #logotext{
+            font-size:  20pt;
+            width:90%;
+            margin: 15px auto;
+            font-weight: 100;
+            color: @logoColor;
+            letter-spacing: 0px
+          }
+        }
+       
+      }
+    
+    #pads{
+        display:flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        .dashCon{
+            margin: 10% auto;
+        }
+        .textPadCon{
+            margin: 10% auto;
+
+        }
+        .pad{
+            flex:1;
+            width:100vw;
+            
+        }
+
+        #pad1{
+            order:1
+        }
+        #pad2{
+            order:2
+        }
+        #pad3{
+            order:4
+        }
+        #pad4{
+            order:3
+        }
+        #pad5{
+            order:5
+        }
+        #pad6{
+            order:6
+        }
+    }
+    .textPad{
+             margin: 0 auto;
+             font-size: 18pt;
+
+        .padHeader{
+            font-size: 18pt;
+
+        }
+        .padArticle{
+            padding: 24px 0;
+            font-size: 9pt;
+            font-family: @lightFont;
+        }
+    }
+
+
+    footer{
+        display: flex;
+        min-height: 80px;
+        font-size:9pt;
+        color: #68686b;
+       
+        *{
+            margin:30;
+            flex:1;
+        }
+        #loc{
+         
+            text-align: right;
+        }
+    }
+
+
+}
+
+}

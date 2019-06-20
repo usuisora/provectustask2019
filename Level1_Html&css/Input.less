@@ -1,0 +1,210 @@
+@import  url("./mobile.less");;
+
+
+
+@basicFont :'Open Sans';
+@lightFont  : 'Open Sans Light';
+@boldFont: 'Open Sans Bold ';
+@proxFont: 'ProximaNova-Semibold';
+@fcolor : #2e2e2e;
+@logoColor: #555559;
+@backColor: #fbfafa;
+@padColor: #555559;
+@padBackColor: #fff;
+@instaColor: #fff;
+
+@LogoTextSize: 56pt;
+@padHeadSize: 24pt;
+@padArticleSize: 18pt;
+@NavItemSize: 18px;
+@footerTextSize: 14pt;
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: @basicFont;
+    color: @fcolor;
+    background: @backColor;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+        
+    
+    }
+
+
+    #upcover{
+        background: url('./resources/upCover.jpg') ;  
+        width: 100%;
+        margin: auto;
+       display: flex;
+          img{
+              flex:1
+          }
+      }
+  
+      #insta{
+          position: absolute;
+          right:20px;
+          font-size: 10px;
+          color: @instaColor;
+          top:15px;
+          a{
+              color: @instaColor;
+              text-decoration: none
+          }
+          #instacon{
+       
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: auto;
+              font-family: @proxFont;
+              *{
+                  margin: 0 4px;
+              }
+          }
+      }
+      #nav{
+          display: flex;
+          height: 100px;
+          width: 100vw;
+          background:@padBackColor;
+          color: 2e2e2e;
+         ul{
+          height: 100px;
+
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          width: 700px;
+
+          li{
+                margin: auto;
+                font-size: @NavItemSize;
+          }
+          }
+  
+         
+      }
+      #logocover{
+      
+        height:100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+  
+        #logocont{
+          margin: auto;
+          padding: 0;
+          flex:1;
+          *{
+              display: block;
+              margin:auto;
+              text-align: center;
+           
+          }
+          #logotext{
+            font-size: 25pt;
+            width:50%;
+            font-weight: 100;
+            color: @logoColor;
+            letter-spacing: 0px
+          }
+        }
+       
+      }
+
+    //   .textPad{
+    //     display:grid;
+    //     margin: 0;
+    //     padding: 0;
+    //     grid-template-columns: repeat(6,1fr);
+    //     grid-column-gap: 0;
+    //     font-size:@padHeadSize;
+    //     color: @padColor;
+    //           background: @padBackColor;
+    //     .dashCon{
+    //         grid-column: 1/2
+    //     }
+    //     .textPadCon{
+    //         grid-column: 2/5
+    //     }
+    //   }
+    
+      .textPad{
+          display: flex;
+          font-size:@padHeadSize;
+          color: @padColor;
+          background: @padBackColor;
+          margin:  0;
+          padding: 0;
+          height:100%;
+          
+            
+          
+          .dashCon{
+                width:5%;
+                margin:25% 0 auto auto;
+                .dash{
+                    text-align: right;
+                    margin: 0;
+                    padding: 0;
+                }
+          }
+         
+          .textPadCon{
+              margin:25% 20px auto;
+              width:80%;
+
+          }
+          .padHeader{
+              padding: 4px 0 0 0 ;
+              font-family: @boldFont;
+              font-size: 24pt
+          }
+          .padArticle{
+                  font-family: @lightFont;
+              padding: 45px 0;
+              font-size: @padArticleSize
+  
+          }
+      }
+      #pads{
+     
+          display:grid;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 0;
+          .pad{
+              width:50vw;
+              margin:  0;
+              padding: 0;
+          }
+      }
+      footer{
+          display: flex;
+          height: 80px;
+          justify-content: center;
+          font-size:@proxFont;
+          color: #68686b;
+          *{
+              margin:30;
+              flex:1;
+          }
+          #loc{
+           
+              text-align: right;
+          }
+      }
+  
+  
+     
+
+      

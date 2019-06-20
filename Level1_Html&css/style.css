@@ -1,0 +1,238 @@
+@media (max-width: 630px) {
+  body {
+    width: 100vh;
+  }
+  body #nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+  }
+  body #nav ul {
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  body #nav ul li {
+    margin: 10px auto;
+    padding-right: 50px;
+    font-size: 14pt;
+  }
+}
+@media (max-width: 800px) {
+  body #logocover {
+    height: 60vh;
+  }
+  body #logocover #logocont #logotext {
+    font-size: 20pt;
+    width: 90%;
+    margin: 15px auto;
+    font-weight: 100;
+    color: #555559;
+    letter-spacing: 0px;
+  }
+  body #pads {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  body #pads .dashCon {
+    margin: 10% auto;
+  }
+  body #pads .textPadCon {
+    margin: 10% auto;
+  }
+  body #pads .pad {
+    flex: 1;
+    width: 100vw;
+  }
+  body #pads #pad1 {
+    order: 1;
+  }
+  body #pads #pad2 {
+    order: 2;
+  }
+  body #pads #pad3 {
+    order: 4;
+  }
+  body #pads #pad4 {
+    order: 3;
+  }
+  body #pads #pad5 {
+    order: 5;
+  }
+  body #pads #pad6 {
+    order: 6;
+  }
+  body .textPad {
+    margin: 0 auto;
+    font-size: 18pt;
+  }
+  body .textPad .padHeader {
+    font-size: 18pt;
+  }
+  body .textPad .padArticle {
+    padding: 24px 0;
+    font-size: 9pt;
+    font-family: 'Open Sans Light';
+  }
+  body footer {
+    display: flex;
+    min-height: 80px;
+    font-size: 9pt;
+    color: #68686b;
+  }
+  body footer * {
+    margin: 30;
+    flex: 1;
+  }
+  body footer #loc {
+    text-align: right;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+  color: #2e2e2e;
+  background: #fbfafa;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#upcover {
+  background: url('./resources/upCover.jpg');
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+#upcover img {
+  flex: 1;
+}
+#insta {
+  position: absolute;
+  right: 20px;
+  font-size: 10px;
+  color: #fff;
+  top: 15px;
+}
+#insta a {
+  color: #fff;
+  text-decoration: none;
+}
+#insta #instacon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: 'ProximaNova-Semibold';
+}
+#insta #instacon * {
+  margin: 0 4px;
+}
+#nav {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  background: #fff;
+  color: 2e2e2e;
+}
+#nav ul {
+  height: 100px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 700px;
+}
+#nav ul li {
+  margin: auto;
+  font-size: 18px;
+}
+#logocover {
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+#logocover #logocont {
+  margin: auto;
+  padding: 0;
+  flex: 1;
+}
+#logocover #logocont * {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+#logocover #logocont #logotext {
+  font-size: 25pt;
+  width: 50%;
+  font-weight: 100;
+  color: #555559;
+  letter-spacing: 0px;
+}
+.textPad {
+  display: flex;
+  font-size: 24pt;
+  color: #555559;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.textPad .dashCon {
+  width: 5%;
+  margin: 25% 0 auto auto;
+}
+.textPad .dashCon .dash {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+.textPad .textPadCon {
+  margin: 25% 20px auto;
+  width: 80%;
+}
+.textPad .padHeader {
+  padding: 4px 0 0 0 ;
+  font-family: 'Open Sans Bold ';
+  font-size: 24pt;
+}
+.textPad .padArticle {
+  font-family: 'Open Sans Light';
+  padding: 45px 0;
+  font-size: 18pt;
+}
+#pads {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0;
+}
+#pads .pad {
+  width: 50vw;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  font-size: 'ProximaNova-Semibold';
+  color: #68686b;
+}
+footer * {
+  margin: 30;
+  flex: 1;
+}
+footer #loc {
+  text-align: right;
+}
