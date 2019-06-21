@@ -5,9 +5,14 @@
 //   expirationDate: '01-30-1999' 
 // }
 
-const filterByExpiration = (items) => {
-  // change this function to return only current items
-  // where expirationDate > today's date
 
-  return items;
+
+
+const reverseDateString = (ds) => {
+  return ds.split('-').reverse().join('-')
+}
+
+const filterByExpiration = (items) => {
+    let Today =   new Date().toISOString().substring(0,10)
+    return items.filter(item => reverseDateString(item.expirationDate) < Today)
 };
