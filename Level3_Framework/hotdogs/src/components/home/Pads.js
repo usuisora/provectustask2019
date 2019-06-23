@@ -3,13 +3,21 @@ import doublePad2 from '../../resources/doublePad2.jpg'
 import doublePad3 from '../../resources/doublePad3.jpg'
 
 
+const Pads  = ({padsURL}) => 
+<div id="doublePads">
+                {[...padsURL,doublePad2,doublePad3].map( url => 
+                <img className ='doublePad'  src={url} alt='pad'/>
+                )}
+        </div>
 
-const Pads  = ({src}) => 
-         <div id="doublePads">
-             <img className ='doublePad' src={src} alt='fromGetReqImg'/>
-             <img className ='doublePad' src={doublePad2} alt='doublePad2Img'/>
-             <img className ='doublePad' src={doublePad3} alt='doublePad3Img'/>
+export default Pads
 
+
+
+
+
+
+        
         {/* <div className="textPad "  id='pad1'>
             
                 <div className='dashCon'>
@@ -48,9 +56,3 @@ const Pads  = ({src}) =>
                 </div>
             </div>  
         <img src={pad6} alt="" className="pad"  id='pad6'/> */}
-    
-    </div>
-
-
-
-        export default Pads

@@ -1,24 +1,30 @@
-import React,{useState} from 'react'
-
+import React,{useState,useEffect} from 'react'
 import LogoCover from './home/LogoCover';
 import Pads from './home/Pads'
-import Footer from './Footer'
+import {getJson} from '../API'
+import { filterByExpiration  } from '../lib'
+
+
+
+
 function Home (){
-    const [src,setSrc] = useState('')
 
-    const getImage =  async() =>{
-        let data = await fetch('https://formula-test-api.herokuapp.com/menu')
-        let res = await data.json()
-        console.log(res)
-        setSrc(res[0].backgroundURL)
+    const [padsURL, setPadsURL] = useState([]);
 
-     }
-     getImage();
-
-    return <>
-            <LogoCover/>
-            <Pads src={src}/>
-        </>
+      
+          useEffect(() => {
+            const fetchImages =  async () =>{
+                let pads = await getJson('https://formula-test-api.herokuapp.com/menu')
+                let filteredPads = await filterByExpiration(pads);
+                        console.log('Alive pads: ',filteredPads)
+                        setPadsURL(filteredPads)
+                }
+             fetchImages()
+          }, [])
+    return  <>
+                <LogoCover/>
+                <Pads padsURL={padsURL}  />
+            </>
 }
 
 
