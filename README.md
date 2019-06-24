@@ -3,6 +3,12 @@ https://github.com/DmitryIvanov92/formula-fe-test
 - - - - - -
 # My repo  ( ! )
 https://github.com/usuisora/provectustask2019
+
+#Author:
+ Ivan 
+ | email: pokarayano@gmail.com 
+ | skype : vanyakarayan
+
 - - - - -
 
 ### 1. HTML&CSS
@@ -21,5 +27,6 @@ the description was created independantly to adaptive mobile view.
 
 The IMAGES from url will be automatically fetched from :**https://formula-test-api.herokuapp.com/menu** and showed that are **not EXPIRED. **
 
-**Link on preview  : https://murmuring-cove-33353.herokuapp.com**  
+**Link on preview  : https://murmuring-cove-33353.herokuapp.com .**  
 ```
+
