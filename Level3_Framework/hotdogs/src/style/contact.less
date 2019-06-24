@@ -20,7 +20,7 @@
         background: white;
         margin-block-end: 100px;
         
-        box-shadow: 2px 4px 4px #bbb;
+        box-shadow: @shadow;
         border-radius: 4px;
         input{
             border: none;
@@ -64,4 +64,21 @@
             text-transform: uppercase;
         }
     }
+
+    .alertbox{
+        background: @activeColor;
+        color: white;
+        position: fixed;
+        padding:  15px;
+         top:10px;
+          left:30px;
+          box-shadow: @shadow;
+          opacity:0;
+
+    }
+    .show{
+        opacity:0.9;
+
+    }
 }
+

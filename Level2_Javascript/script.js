@@ -14,5 +14,5 @@ const reverseDateString = (ds) => {
 
 const filterByExpiration = (items) => {
     let Today =   new Date().toISOString().substring(0,10)
-    return items.filter(item => reverseDateString(item.expirationDate) < Today)
+    return items.filter(item => reverseDateString(item.expirationDate) > Today)
 };

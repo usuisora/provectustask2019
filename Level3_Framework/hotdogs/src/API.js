@@ -1,7 +1,6 @@
 
 
-export const post = async (e,serverLink,body) =>{
-    e.preventDefault()
+export const post = async (serverLink,body) =>{
     let postdata =  await fetch(serverLink, {
         method: 'POST',
         headers : new Headers({

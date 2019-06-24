@@ -3,7 +3,7 @@ import React from 'react'
 const Email = ({email,setEmail}) => 
         <>
         <label htmlFor="email">E-mail</label>
-         <input type="text" name='email'  value ={email} onChange={({target:{value}})=>setEmail(value)}  />
+         <input required type="text" name='email'  value ={email} onChange={({target:{value}})=>setEmail(value)}  />
         </>
 
 

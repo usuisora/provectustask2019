@@ -5,7 +5,7 @@ import Routes from "./Routes";
 import Nav from './Nav'
 const myRouter =()=>
             <Router>
-              <Nav/>
+                <Nav/>
                <Routes/>
             </Router>
 

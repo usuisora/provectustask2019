@@ -15,14 +15,14 @@ function Form() {
 
    const clearForm = () =>{
        setComment(''); setName('');setEmail('')
-                    alert('Comment was sended')
+                    // alert('Comment was sended')
    }
 
    let body = { name, email,comment};
  
     return (
            <form>
-                <Name name={name} setName={setName}/>
+                <Name  name={name} setName={setName}/>
                 <Email email={email} setEmail={setEmail}/>
                 <Comment comment={comment} setComment={setComment}/>
                 <Submit postComment={post} clearForm={clearForm}  body={body} />
