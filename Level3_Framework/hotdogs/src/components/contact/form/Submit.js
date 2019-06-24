@@ -12,8 +12,9 @@ const Submit = ({postComment,body,clearForm}) => {
     }
 
     const handleClick =(e)=>{
-        // e.preventDefault()
         (body.email !== '' && body.comment !== '') ? handlePost() : showAlertBox('Fill the form!')
+        e.preventDefault();
+
         
     }
 
