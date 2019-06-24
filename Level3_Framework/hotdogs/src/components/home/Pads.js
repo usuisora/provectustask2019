@@ -17,8 +17,10 @@ export default Pads
 
 
 
+
+
         
-        {/* <div className="textPad "  id='pad1'>
+        /* <div className="textPad "  id='pad1'>
             
                 <div className='dashCon'>
                         <div className="dash">—</div>
@@ -55,4 +57,4 @@ export default Pads
                             Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</div>
                 </div>
             </div>  
-        <img src={pad6} alt="" className="pad"  id='pad6'/> */}
+        <img src={pad6} alt="" className="pad"  id='pad6'/> */

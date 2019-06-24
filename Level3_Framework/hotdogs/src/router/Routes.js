@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 function Routes() {
     return (
         <>
+        <Route path='/menu' exact component={Home}/>
         <Route path='/' exact component={Home}/>
         <Route path='/contact' component={Contact}/> 
         </>
