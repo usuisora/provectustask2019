@@ -12,19 +12,19 @@ function Home (){
     const [padsURL, setPadsURL] = useState([]);
 
       
-          useEffect(() => {
+  useEffect(() => {
             const fetchImages =  async () =>{
                 let pads = await getJson('https://formula-test-api.herokuapp.com/menu')
                 let filteredPads = await filterByExpiration(pads);
                         console.log('Alive pads: ',filteredPads)
-                        setPadsURL(filteredPads)
+                        setPadsURL(filteredPads.map(f=> f.backgroundURL))
                 }
              fetchImages()
           }, [])
-    return  <>
-                <LogoCover/>
-                <Pads padsURL={padsURL}  />
-            </>
+                return  <>
+                            <LogoCover/>
+                            <Pads padsURL={padsURL}  />
+                        </>
 }
 
 
